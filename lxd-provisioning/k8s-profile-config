@@ -14,6 +14,9 @@ devices:
     nictype: bridged
     parent: lxdbr0
     type: nic
+  kmsg:
+    path: /dev/kmsg
+    type: unix-char
   root:
     path: /
     pool: default
