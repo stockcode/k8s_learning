@@ -6,6 +6,7 @@ yum install -y -q yum-utils device-mapper-persistent-data lvm2 > /dev/null 2>&1
 yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo > /dev/null 2>&1
 yum install -y -q docker-ce-18.06.0.ce-3.el7 >/dev/null 2>&1
 
+mkdir -p /etc/docker
 cat >> /etc/docker/daemon.json<<EOF
 {
 	  "registry-mirrors": ["https://0azpgep7.mirror.aliyuncs.com"],
